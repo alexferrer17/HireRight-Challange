@@ -1,6 +1,6 @@
 # HireRight-Challange
 
-To run text_editor.py you need opencv installed and make sure your immutils is install if not you can install by:
+To run text_detection.py you need opencv installed and make sure your immutils is install if not you can install by:
 
 $ pip install --upgrade imutils
 
