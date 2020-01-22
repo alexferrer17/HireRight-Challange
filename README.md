@@ -1,6 +1,6 @@
 # HireRight-Challange
 
-To run text_editor.py you need opencv installed.
+To run text_editor.py you need opencv installed and make sure your 
 
 And run this in terminal:
 
