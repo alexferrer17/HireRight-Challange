@@ -83,5 +83,3 @@ for i in labelBoxes:
 #Can do whatever we want with the text/box/center of the box we've found at this point to add it to our dataset
 for i in labelBoxes:
     print(boxLabels[i] + ": " + boxText[closestToLabel[i]])
-
-print(patternMatch("Fil[a-z]* Date", "Filing Date"))
