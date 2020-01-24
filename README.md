@@ -4,9 +4,13 @@ To run text_detection.py you need opencv python installed and make sure your imm
 
 $ pip install --upgrade imutils
 
-
 And run this in terminal:
 
 $ python text_detection.py --image images/exampleimage.jpg \
 	--east frozen_east_text_detection.pb
+	
+	
+To run CrawlerTest.py you need selenium python installed you can install by:
+
+$ pip install selenium
   
