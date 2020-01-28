@@ -1,8 +1,13 @@
 import re
+import pyautogui
 
 #Assumes (StartX, StartY, EndX, EndY) format of boxes
 def calcCenter(box):
     return ((box[2]+box[0])/2, (box[3]+box[1])/2)
+
+def TakeScreenShot(left, top, width, height):
+    pyautogui.screenshot("test_screenshot.png", region=(left,top,width,height))
+    return
 
 #Will be replaced with OCR
 def parseText(box):
