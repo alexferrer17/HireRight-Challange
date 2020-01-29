@@ -14,3 +14,5 @@ To run CrawlerTest.py you need selenium python installed you can install by:
 
 $ pip install selenium
   
+  
+Install Google Crome for the Cromedriver.exe
