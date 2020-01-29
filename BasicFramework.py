@@ -5,10 +5,6 @@ import pyautogui
 def calcCenter(box):
     return ((box[2]+box[0])/2, (box[3]+box[1])/2)
 
-def TakeScreenShot(left, top, width, height):
-    pyautogui.screenshot("text_screenshot.png", region=(left,top,width,height))
-    return
-
 #Will be replaced with OCR
 def parseText(box):
     return "Sample Text for Box at " + str(box)
