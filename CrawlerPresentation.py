@@ -2,6 +2,11 @@ from selenium import webdriver
 
 import time
 
+#User Input
+lastName = raw_input("Enter The Last Name of the Defendant: ")
+firstName = raw_input("Enter The First Name of the Defendant: ")
+
+#Open Browser
 browser = webdriver.Chrome()
 browser.get('https://casesearch.epcounty.com/PublicAccess/default.aspx')
 time.sleep(1)
@@ -17,19 +22,17 @@ time.sleep(1)
 
 #Last Name
 lName = browser.find_element_by_name('LastName')
-lastName = raw_input("Enter The Last Name of the Defendant: ")
 lName.send_keys(lastName)
 
 #First Name
 fName = browser.find_element_by_name('FirstName')
-firstName = raw_input("Enter The First Name of the Defendant: ")
 fName.send_keys(firstName)
 
 #click search
 browser.find_element_by_name('SearchSubmit').click()
 time.sleep(1)
 
-#Take screenshots
+#Take screenshots for each case
 elements = browser.find_elements_by_xpath("//a[contains(@href, 'CaseDetail.aspx?CaseID=')]")
 i=0
 while i < len(elements):
