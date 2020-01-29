@@ -1,5 +1,4 @@
 import re
-import pyautogui
 
 #Assumes (StartX, StartY, EndX, EndY) format of boxes
 def calcCenter(box):
